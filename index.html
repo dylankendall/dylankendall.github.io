@@ -2,77 +2,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modern Learn Lab</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', sans-serif;
+            background: #f7f6f3;
+            color: #000;
+            padding: 2rem;
             line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #fefefe;
-            color: #333;
-        }
-        header {
-            background: #ef3c23;
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-        main {
-            padding: 2rem;
-        }
-        section {
-            margin-bottom: 2rem;
         }
         h1, h2 {
-            color: #222;
+            color: #e65330;
         }
-        footer {
-            background: #ef3c23;
-            color: white;
+        .section {
+            margin-bottom: 4rem;
+        }
+        .hero {
             text-align: center;
+        }
+        .hero img {
+            max-width: 300px;
+        }
+        .cta input {
             padding: 1rem;
+            margin: 0.5rem;
+            font-size: 1rem;
+            width: 20%;
+        }
+        .cta button {
+            padding: 1rem 2rem;
+            background: #e65330;
+            color: white;
+            border: none;
+            font-weight: bold;
+        }
+        .video-container {
             margin-top: 2rem;
         }
-        a {
-            color: #ef3c23;
+        img.full {
+            width: 100%;
+            margin: 1rem 0;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Modern Learn Lab</h1>
-    <p>Arts-based education disrupting the path to poverty, prison, and housing insecurity</p>
-</header>
+    <div class="section hero">
+        <img src="modernlearnlab_logo.png" alt="Modern Learn Lab Logo" />
+        <h2>Join us. We can use something as simple and wonderful as creativity to end homelessness.</h2>
+        <div class="cta">
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+            <input type="email" placeholder="Email Address" />
+            <button>YES! GREAT IDEA!</button>
+        </div>
+    </div>
 
-<main>
-    <section>
-        <h2>Our Mission</h2>
-        <p>We offer trauma-informed, arts-based education to high-risk adult learners to foster personal growth, build employability, and end cycles of homelessness and incarceration.</p>
-    </section>
+    <div class="section">
+        <h2>PROBLEM</h2>
+        <p>Modern Learn Lab addresses the lack of educational programming for homeless adults age 18–35...</p>
+        <div class="video-container">
+            <video width="600" controls>
+                <source src="hollywood_arts_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
 
-    <section>
-        <h2>Our Programs</h2>
-        <ul>
-            <li>Comprehensive Arts Education Packages (CAEP)</li>
-            <li>Brick and Mortar Educational Academy</li>
-            <li>Teacher Training Program</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Contact Us</h2>
-        <p>📧 <a href="mailto:dylan@dylankendall.com?subject=Modern Learn Lab">dylan@dylankendall.com</a></p>
-        <p>📸 Instagram: <a href="https://instagram.com/ModernLearnLab">@ModernLearnLab</a></p>
-    </section>
-</main>
-
-<footer>
-    <p>&copy; 2025 Modern Learn Lab</p>
-</footer>
+    <div class="section">
+        <img class="full" src="modernlearnlab_bigidea.png" alt="Big Idea" />
+        <img class="full" src="modernlearnlab_solution.png" alt="Solution" />
+        <img class="full" src="modernlearnlab_education.png" alt="Education" />
+        <img class="full" src="modernlearnlab_hollywoodarts.png" alt="Hollywood Arts" />
+    </div>
 
 </body>
 </html>
